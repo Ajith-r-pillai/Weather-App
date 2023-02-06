@@ -233,9 +233,14 @@ color: white;
     }
     .degree p{
         margin-bottom: 18px;
+        font-size: 3.5rem;
     }
     .temp1{
         background-position-x:-0.4rem ;
+    }
+
+    .city{
+        font-size: 1.5rem;
     }
 }
  
