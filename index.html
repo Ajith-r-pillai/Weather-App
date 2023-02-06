@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styile.css">
+    <script src="https://kit.fontawesome.com/2265084165.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <div class="main">
+        <div class="search">
+            <input type="text" id="cname" class="inp1" placeholder="Enter city">
+            <!-- <input type="text"  id="city" placeholder="Enter City"> -->
+            <button type="button" class="search1" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="temp-main" id="tempmain">
+            <div class="temp1" id="temp1"></div>
+            <div class="temp2">
+                <div class="city"><p id="city">----</p></div>
+                
+                <div class="degree">
+                    
+                    <p id="temp">---</p>
+                    <p><sup>o</sup>c</p>
+                  
+                </div>
+                <hr style="height:2px;border-width:0;color:cadetblue;background-color:cadetblue;width:70%;">
+                <div class="cloud">
+                    <p id="cloud">----</p>
+                    <div class="feel"> 
+                        <p style="font-size: 1.2rem;">Feels like</p>
+                        <p style="font-size: 1.2rem;" id="feels">---</p>
+                        <p style="font-size: 1.2rem;" ><sup>o</sup>c</p></div>
+                   
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="content" id="result">
+            <!-- <div class="box1"> -->
+                <!-- <div class="font1"><i class="fa-solid fa-droplet"></i></div>
+                <div class="humidity"><p id="humidity">81%</p></div>
+              <div><p class="humidityp">humidity</p></div>
+                
+            </div>
+            <div class="vl"></div>
+            <div class="box2">
+                <div class="font1"><i class="fa-solid fa-wind"></i></div>
+                <div class="humidity"><p id="wind">2kmph</p></div>
+                   <div></div> <p class="humidityp">Wind</p>
+                </div>
+            
+            <div class="vl"></div>
+            <div class="box3">
+                <div class="font1"><i class="fa-solid fa-eye"></i></div>
+                <div class="humidity"><p id="visi">10km</p> </div>
+                   <div><p class="humidityp">Visibility</p></div>
+            
+            </div>
+            <div class="vl"></div>
+            <div class="box4">
+                <div class="font1"><i class="fa-solid fa-gauge-high"></i></div>
+                <div class="humidity"> <p id="pressure">1011hpa</p></div> 
+                  <div class="humidityp"><p>Pressure</p></div>
+            </div> -->
+        </div>
+   
+        
+    </div>
+    
+</body>
+<script src="./weather.js"></script>
+</html>

@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/pexels-michał-osiński-3454270.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.search{
+    border-radius: 1rem;
+    margin-top: 2rem;
+    width: 33%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.inp1{
+    height: 2.1rem;
+    width: 18rem;
+    border-radius: 1rem;
+    border: none;
+    outline:none;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.search button{
+    width: 3rem;
+    height: 5rem;
+    background: local;
+    border: none;
+
+}
+.search button i{
+    height: 1rem;
+    width: 3rem;
+    font-size: 1.9rem;
+color: white;
+}
+.temp-main{
+    width: 40%;
+    height: 12rem;
+    /* border: red 1px solid; */
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border-radius: 1rem;
+}
+.temp1{
+    width: 50%;
+    height: 12rem;
+    /* border: red 1px solid; */
+    background-image: url(./images/download-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:3rem ;
+    background-position-y:-1rem ;
+
+    background-color: rgba(0, 0, 0, 0.185) ;
+
+      border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
+}
+.temp2{
+    width: 50%;
+    height: 12rem;
+    /* border: red 1px solid; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.185) ;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+.degree{
+    width: 100%;
+    height: 8rem;
+    /* border: red 1px solid; */
+    text-align: start;
+    display: flex;
+    align-items: center;
+    
+}
+.degree p{
+      font-size: 4rem;
+    color: black;
+    font-family: system-ui;
+     color: white;
+}
+.cloud p{
+    font-size: 1.4rem;
+    font-family: serif;
+    color: white
+}
+.content{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box1,.box2,.box3,.box4 {
+    background-color: rgba(0, 0, 0, 0.185) ;
+    width: 13%;
+    height: 9rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+    
+}
+.vl {
+    border-left: 2px solid cadetblue;
+    height: 9rem;
+    margin-top: 2rem;
+}
+.vl2 {
+    border-left: 2px solid cadetblue;
+    height: 9rem;
+    margin-top: 2rem;
+}
+ .font1{
+    width: 43%;
+    height: 57%;
+    /* border: 2px solid cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .font1 i{
+    font-size: 2.5rem;
+    color: white;
+ }
+ .humidity{
+    width: 61%;
+    height: 100%;
+    /* border: 2px solid cadetblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+ }
+ .humidityp{
+    margin-bottom: 1rem;
+    font-size: 1.7rem; 
+    color: white;
+ }
+.city{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color:white;
+}
+.feel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:768px){
+    .main{
+        /* background-image: url(./images/pexels-josh-hild-2448749\ \(1\).jpg); */
+        background-position-x: center;
+        background-size: cover;
+    }
+    .search{
+        width: 70%;
+        height: 4.5rem;
+        background-color: rgba(0, 0, 0, 0.185);
+    }
+    .inp1{
+        width: 14rem;
+    }
+    .temp-main{
+        width: 90%;
+        height: 10rem;
+        /* background-color:rgba(0, 0, 0, 0.185) */
+    }
+    .degree{
+        height: 4rem;
+    }
+    .temp1,.temp2{
+        height: 10rem;
+    }
+    .font1 i{
+        font-size: 1.5rem;
+        color: white;
+     }
+     .humidity{
+        font-size: 1.5rem;
+     }
+     .humidityp{
+        font-size: 1.5rem;
+     }
+     .box1,.box2,.box3,.box4{
+        width: 49%;
+        height: 6.7rem;
+        background:none;
+        /* background-color:rgba(0, 0, 0, 0.185) */
+
+     }
+     .content{
+        flex-wrap: wrap;
+     }
+     .vl2 {
+        border-left:none;
+        height: 6rem;
+        margin-top: 2rem;
+    }
+    .vl {
+        
+        height: 6rem;
+        margin-top: 2rem;
+    }
+    .degree p{
+        margin-bottom: 18px;
+    }
+}
+ 
+
+  
