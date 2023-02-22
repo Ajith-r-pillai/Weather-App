@@ -7,7 +7,11 @@ function search(){
 
 
   function displayWeather(WeatherDetails){
-
+  cname1=cname.value
+  code=WeatherDetails.cod
+  if(cname1){
+    if(code==200)
+    {
     placename=WeatherDetails.name
     temperature=WeatherDetails.main.temp
     temperature=Math.round(WeatherDetails.main.temp-273.15)
@@ -56,7 +60,13 @@ function search(){
     document.getElementById("cloud").innerHTML=cloud
     document.getElementById("feels").innerHTML=feelslike
     document.getElementById("temp1").style.backgroundImage=`url('http://openweathermap.org/img/w/${icon}.png')`
-
+    }
+    else{
+      error2.innerHTML=`  <p>Invalid Input....</p>`
+    }
 }
+else{
+  error1.innerHTML=`  <p>Enter The Place Name....</p> `
+  }
   
-
+  }

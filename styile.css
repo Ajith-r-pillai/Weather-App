@@ -185,6 +185,23 @@ transition: all .35s ease-in-out;
     display: flex;
     align-items: center;
 }
+.error1{
+    margin-top: 1rem;
+
+}
+.error1 p{
+    
+    font-size: 2rem;
+    color: white;
+    font-family: cursive;
+}
+
+.error2 p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-family: cursive;
+}
 
 @media(max-width:768px){
     .main{
