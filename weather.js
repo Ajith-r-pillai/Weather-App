@@ -12,6 +12,8 @@ function search(){
   if(cname1){
     if(code==200)
     {
+    error1.innerHTML=" "
+    error2.innerHTML=" "
     placename=WeatherDetails.name
     temperature=WeatherDetails.main.temp
     temperature=Math.round(WeatherDetails.main.temp-273.15)
@@ -63,10 +65,24 @@ function search(){
     }
     else{
       error2.innerHTML=`  <p>Invalid Input....</p>`
+      error1.innerHTML=" "
+      result.innerHTML=" "
+      document.getElementById("city").innerHTML="---"
+      document.getElementById("temp").innerHTML="---"
+      document.getElementById("cloud").innerHTML="---"
+      document.getElementById("feels").innerHTML="---"
+      document.getElementById("temp1").style.backgroundImage=""
     }
 }
 else{
   error1.innerHTML=`  <p>Enter The Place Name....</p> `
+  error2.innerHTML=" "
+  result.innerHTML=" "
+  document.getElementById("city").innerHTML="---"
+  document.getElementById("temp").innerHTML="---"
+  document.getElementById("cloud").innerHTML="---"
+  document.getElementById("feels").innerHTML="---"
+  document.getElementById("temp1").style.backgroundImage=""
   }
   
   }
